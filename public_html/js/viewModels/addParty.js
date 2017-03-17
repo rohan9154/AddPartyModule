@@ -73,54 +73,7 @@ define(['ojs/ojcore', 'knockout', 'utils', 'data/data', 'mapping','ojs/ojrouter'
                     console.log(self.Items);
                     self.Items = mapping.toJSON(self.Items);
                     console.log(self.Items);
-                   
-//                    var jsonData = {
-//                        "partyid": "CITI0009",
-//                        "accountnumber": "4000000",
-//                        "accounttype": "Saving",
-//                        "addressline1": "80 Pittsford ",
-//                        "addressline2": "Victor Rd #9",
-//                        "addressline3": "Cleveland",
-//                        "addressline4": "Cleveland",
-//                        "annualincome": 150000,
-//                        "applicationid": "15410",
-//                        "bureau": "Y",
-//                        "countrycode": "IN",
-//                        "countryofissue": "IN",
-//                        "creditscore": 800,
-//                        "emailid": "adelina_nabours@gmail.com",
-//                        "firstname": "Adelina",
-//                        "gender": "M",
-//                        "hometelephone": "258974562",
-//                        "idnumber": "25987",
-//                        "idtype": "Passport",
-//                        "issuingauthority": "Passport Offcie",
-//                        "lastname": "Nabours",
-//                        "mobilenumber": "990250032",
-//                        "nationality": "IN",
-//                        "numberofdependents": 2,
-//                        "occupationcode": "ABC",
-//                        "partytype": "LEAD",
-//                        "placeofissue": "Bangalore",
-//                        "privacyindicator": null,
-//                        "residencyindicatorunits": "4",
-//                        "residencyindicatorvale": "4",
-//                        "routingnumber": "1234567",
-//                        "servingarmymember": "12345555",
-//                        "ssnnumber": "98750250",
-//                        "state": "KA",
-//                        "suffix": "M",
-//                        "title": "Mr",
-//                        "warveteran": "1234",
-//                        "workphone": "908066593532",
-//                        "zipcode": "560017"
-//        
-//    };
-//                    JSON.stringify(jsonData);
-//                    console.log(jsonData);
-//                    data.postData('http://129.146.22.78:31681/fsgbu/party/addparty', self.Items).then(function (data) {
-//                        console.log(data);
-//                    });
+               
                     $.ajax({
                         url: "http://129.146.22.78:31681/fsgbu/party/addparty",
                         method: "POST",
