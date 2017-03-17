@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Party Addition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/override.css" type="text/css"/>
+        
+    </head>
+    <body>
+         <!-- ko ifnot: recordAdded -->
+        <div><h2>Fill the below details to create party....</h2></div>
+
+        <div style="float:left; width:40%;" class ="block"> 
+       
+            <strong> <label for="partyid">Party Id</label> </strong>
+            <input  id="partyid" type="number" data-bind="ojComponent: {component: 'ojInputText', required: true, value: Items.partyid}" required/>
+            <strong> <label for="accountnumber">Account Number</label> </strong>
+            <input  id="accountnumber" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.accountnumber}"/>
+            <strong> <label for="accounttype">Account Type</label> </strong>
+            <input  id="accounttype" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.accounttype}"/>
+            <strong> <label for="addressline1">Address Line1</label> </strong>
+            <input  id="addressline1" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.addressline1}"/>
+            <strong> <label for="addressline2">Address Line2</label> </strong>
+            <input  id="addressline2" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.addressline2}"/>
+            <strong> <label for="addressline3">Address Line3</label> </strong>
+            <input  id="addressline3" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.addressline3}"/>
+            <strong> <label for="addressline4">Address Line4</label> </strong>
+            <input  id="addressline4" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.addressline4}"/>
+            <strong> <label for="annualincome">Annual Income</label> </strong>
+            <input  id="annualincome" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.annualincome}"/>
+            <strong> <label for="applicationid">Application Id</label> </strong>
+            <input  id="applicationid" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.applicationid}"/>
+            <strong> <label for="bureau">Bureau</label> </strong>
+            <input  id="bureau" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.bureau}"/>
+            <strong> <label for="countrycode">Country Code</label> </strong>
+            <input  id="countrycode" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.countrycode}"/>
+            <strong> <label for="countryofissue">Country of Issue</label> </strong>
+            <input  id="countryofissue" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.countryofissue}"/>
+            <strong> <label for="creditscore">Credit Score</label> </strong>
+            <input  id="creditscore" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.creditscore}"/>
+            <strong> <label for="emailid">Email Id</label> </strong>
+            <input  id="emailid" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.emailid}"/>
+            <strong> <label for="firstname">First Name</label> </strong>
+            <input  id="firstname" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.firstname}"/>
+            <strong> <label for="gender">Gender</label> </strong>
+            <input  id="gender" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.gender}"/>
+            <strong> <label for="hometelephone">Home Telephone</label> </strong>
+            <input  id="hometelephone" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.hometelephone}"/>
+            <strong> <label for="idnumber">Id Number</label> </strong>
+            <input  id="idnumber" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.idnumber}"/>
+            <strong> <label for="idtype">Id Type</label> </strong>
+            <input  id="idtype" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.idtype}"/>
+            <strong> <label for="issuingauthority">Issuing Authority</label> </strong>
+            <input  id="issuingauthority" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.issuingauthority}"/>
+            <strong> <label for="lastname">Last Name</label> </strong>
+            <input  id="lastname" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.lastname}"/>
+            <strong> <label for="mobilenumber">Mobile Number</label> </strong>
+            <input  id="mobilenumber" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.mobilenumber}"/>
+
+            
+
+        </div>
+        <div style="float:right; width:40%;">
+            <strong> <label for="nationality">Nationality</label> </strong>
+            <input  id="nationality" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.nationality}"/>
+            <strong> <label for="numberofdependents">Number of Dependency</label> </strong>
+            <input  id="numberofdependents" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.numberofdependents}"/>
+            <strong> <label for="occupationcode">Occupation Code</label> </strong>
+            <input  id="occupationcode" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.occupationcode}"/>
+            <strong> <label for="partytype">Party Type</label> </strong>
+            <input  id="partytype" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.partytype}"/>
+            <strong> <label for="placeofissue">Place of issue</label> </strong>
+            <input  id="placeofissue" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.placeofissue}"/>
+            <strong> <label for="privacyindicator">Privacy Indicator</label> </strong>
+            <input  id="privacyindicator" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.privacyindicator}"/>
+            <strong> <label for="residencyindicatorunits">Residency Indicator(Units)</label> </strong>
+            <input  id="residencyindicatorunits" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.residencyindicatorunits}"/>
+            <strong> <label for="residencyindicatorvale">Residency Indicator(Value)</label> </strong>
+            <input  id="residencyindicatorvale" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.residencyindicatorvale}"/>
+            <strong> <label for="routingnumber">Routing Number</label> </strong>
+            <input  id="routingnumber" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.routingnumber}"/>
+            <strong> <label for="servingarmymember">Serving Army Member</label> </strong>
+            <input  id="servingarmymember" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.servingarmymember}"/>
+            <strong> <label for="ssnnumber">SSN Number</label> </strong>
+            <input  id="ssnnumber" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.ssnnumber}"/>
+            <strong> <label for="state">State</label> </strong>
+            <input  id="state" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.state}"/>
+            <strong> <label for="suffix">Suffix</label> </strong>
+            <input  id="suffix" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.suffix}"/>
+            <strong> <label for="title">Title</label> </strong>
+            <input  id="title" type="text" data-bind="ojComponent: {component: 'ojInputText', value: Items.title}"/>
+            <strong> <label for="warveteran">War Veteran</label> </strong>
+            <input  id="warveteran" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.warveteran}"/>
+            <strong> <label for="workphone">Work Phone</label> </strong>
+            <input  id="workphone" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.workphone}"/>
+            <strong> <label for="zipcode">Zip Code</label> </strong>
+            <input  id="zipcode" type="number" data-bind="ojComponent: {component: 'ojInputText', value: Items.zipcode}"/><br/><br/><br/>
+            <button id= "button"
+                    data-bind="click: buttonClick, 
+                       ojComponent: { component: 'ojButton', label: 'ADD RECORD' }">
+            </button>                
+</div> 
+        <!-- /ko -->  
+          <!-- ko if: recordAdded -->
+                    <div class= "">
+                        <h2><span style="color: black; font-size: 14px">Record added successfully...</span> </h2>
+                    </div>
+                    <!-- /ko -->
+           
+        
+    </body>
+</html>
