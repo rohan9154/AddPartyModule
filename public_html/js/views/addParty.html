@@ -19,7 +19,7 @@ and open the template in the editor.
         <div style="float:left; width:40%;" class ="block"> 
        
             <strong> <label for="partyid">Party Id</label> </strong>
-            <input  id="partyid" type="number" data-bind="ojComponent: {component: 'ojInputText', required: true, value: Items.partyid}" required/>
+            <input  id="partyid" type="text" data-bind="ojComponent: {component: 'ojInputText', required: true, value: Items.partyid}" required/>
             <strong> <label for="accountnumber">Account Number</label> </strong>
             <input  id="accountnumber" type="number" data-bind="ojComponent: {component: 'ojInputText', required: true, value: Items.accountnumber}"/>
             <strong> <label for="accounttype">Account Type</label> </strong>
@@ -103,13 +103,13 @@ and open the template in the editor.
             <input  id="zipcode" type="number" data-bind="ojComponent: {component: 'ojInputText',required: true, value: Items.zipcode}"/><br/><br/><br/>
             <button id= "button"
                     data-bind="click: buttonClick, 
-                       ojComponent: { component: 'ojButton', label: 'ADD RECORD' }">
+                       ojComponent: { component: 'ojButton', label: 'CREATE PARTY' }">
             </button>                
 </div> 
         <!-- /ko -->  
           <!-- ko if: recordAdded -->
                     <div class= "">
-                        <h2><span style="color: black; font-size: 14px">Record added successfully...</span> </h2>
+                        <h2><span style="color: black; font-size: 14px">Party created successfully...</span> </h2>
                     </div>
                     <!-- /ko -->
            
